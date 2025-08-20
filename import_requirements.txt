@@ -1,0 +1,36 @@
+# Knowledge Base Import System Requirements
+
+# Core dependencies
+elasticsearch>=8.0.0
+elasticsearch-dsl>=8.0.0
+
+# Data processing
+pandas>=1.5.0
+openpyxl>=3.0.0
+
+# Data validation and conversion
+pydantic>=1.10.0
+marshmallow>=3.19.0
+
+# File handling
+pathlib2>=2.3.0
+
+# Logging and utilities
+python-dateutil>=2.8.0
+pytz>=2022.1
+
+# Development and testing (optional)
+pytest>=7.0.0
+black>=22.0.0
+flake8>=5.0.0
+
+# Performance monitoring (optional)
+psutil>=5.9.0
+memory-profiler>=0.60.0
+
+# Alternative Excel libraries (optional)
+xlrd>=2.0.0
+xlsxwriter>=3.0.0
+
+# CSV enhancements (optional)
+python-csv>=0.0.13

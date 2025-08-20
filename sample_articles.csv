@@ -1,0 +1,24 @@
+title,category,subcategory,content,keywords,symptoms,difficulty,estimated_time,solution_steps,diagnostic_questions,success_rate
+"How to Reset Email Password","Email","Password Management","If you've forgotten your email password, follow these steps to reset it securely. This process will help you regain access to your account while maintaining security.","password reset, email, forgot password, account recovery","Cannot log into email account, password not working, account locked","easy",15,"1. Go to password reset page
+2. Enter your email address
+3. Check your email for reset link
+4. Create new password","Do you have access to your recovery email?",0.95
+"Fix Printer Connection Issues","Hardware","Printers","Troubleshooting guide for common printer connectivity problems. This guide covers both network and USB printer connection issues.","printer, connection, network, troubleshooting, offline","Printer shows as offline, cannot print, connection error","medium",25,"1. Check physical connections
+2. Verify network settings
+3. Restart printer
+4. Test connection","Is the printer powered on? Is it connected to the network?",0.85
+"Install Software Updates","Software","System Maintenance","Regular software updates are essential for security and performance. This guide shows you how to safely install updates.","software updates, system maintenance, security patches","System running slowly, security warnings, outdated software","easy",20,"1. Check for available updates
+2. Review update details
+3. Backup important data
+4. Install updates
+5. Restart if required","What operating system are you using? Have you backed up your data?",0.90
+"Resolve Internet Connection","Network","Connectivity","Step-by-step guide to fix common internet connection issues. Covers both wired and wireless connections.","internet, connection, network, troubleshooting","No internet access, slow connection, connection drops","medium",30,"1. Check physical connections
+2. Restart modem/router
+3. Check network settings
+4. Test with different device
+5. Contact ISP if needed","Are you using wired or wireless connection? Can other devices connect?","0.80
+"Backup Important Files","Data Management","Backup","Learn how to create secure backups of your important files and documents. Regular backups protect against data loss.","backup, data protection, file safety","Files lost, system crash, data corruption","easy",45,"1. Identify important files
+2. Choose backup location
+3. Select backup method
+4. Schedule regular backups
+5. Test backup restoration","What types of files do you need to backup? How much storage space do you have?",0.88

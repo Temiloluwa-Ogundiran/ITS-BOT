@@ -1,0 +1,232 @@
+{
+    "articles": [
+        {
+            "title": "How to Reset Email Password",
+            "category": "Email",
+            "subcategory": "Password Management",
+            "content": "If you've forgotten your email password, follow these steps to reset it securely. This process will help you regain access to your account while maintaining security.",
+            "keywords": [
+                "password reset",
+                "email",
+                "forgot password",
+                "account recovery"
+            ],
+            "symptoms": [
+                "Cannot log into email account",
+                "password not working",
+                "account locked"
+            ],
+            "difficulty_level": "easy",
+            "estimated_time_minutes": 15,
+            "success_rate": 0.95,
+            "solution_steps": [
+                {
+                    "order": 1,
+                    "title": "Go to Password Reset Page",
+                    "content": "Navigate to your email provider's password reset page",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 2
+                },
+                {
+                    "order": 2,
+                    "title": "Enter Email Address",
+                    "content": "Enter the email address for the account you need to reset",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 1
+                },
+                {
+                    "order": 3,
+                    "title": "Check Email for Reset Link",
+                    "content": "Check your email inbox for a password reset link",
+                    "step_type": "verification",
+                    "estimated_time_minutes": 5
+                },
+                {
+                    "order": 4,
+                    "title": "Create New Password",
+                    "content": "Click the reset link and create a new strong password",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 7
+                }
+            ],
+            "diagnostic_questions": [
+                {
+                    "question": "Do you have access to your recovery email?",
+                    "question_type": "yes_no",
+                    "required": true,
+                    "help_text": "You'll need access to at least one recovery method"
+                },
+                {
+                    "question": "What email provider are you using?",
+                    "question_type": "multiple_choice",
+                    "options": [
+                        "Gmail",
+                        "Outlook",
+                        "Yahoo",
+                        "Other"
+                    ],
+                    "required": true
+                }
+            ],
+            "is_active": true
+        },
+        {
+            "title": "Fix Printer Connection Issues",
+            "category": "Hardware",
+            "subcategory": "Printers",
+            "content": "Troubleshooting guide for common printer connectivity problems. This guide covers both network and USB printer connection issues.",
+            "keywords": [
+                "printer",
+                "connection",
+                "network",
+                "troubleshooting",
+                "offline"
+            ],
+            "symptoms": [
+                "Printer shows as offline",
+                "cannot print",
+                "connection error"
+            ],
+            "difficulty_level": "medium",
+            "estimated_time_minutes": 25,
+            "success_rate": 0.85,
+            "solution_steps": [
+                {
+                    "order": 1,
+                    "title": "Check Physical Connections",
+                    "content": "Ensure the printer is powered on and properly connected via USB or network cable",
+                    "step_type": "verification",
+                    "estimated_time_minutes": 3
+                },
+                {
+                    "order": 2,
+                    "title": "Verify Network Settings",
+                    "content": "Check if the printer is on the same network as your computer",
+                    "step_type": "verification",
+                    "estimated_time_minutes": 5
+                },
+                {
+                    "order": 3,
+                    "title": "Restart Printer",
+                    "content": "Power cycle the printer to reset its network connection",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 2
+                },
+                {
+                    "order": 4,
+                    "title": "Test Connection",
+                    "content": "Try printing a test page to verify the connection is working",
+                    "step_type": "verification",
+                    "estimated_time_minutes": 5
+                }
+            ],
+            "diagnostic_questions": [
+                {
+                    "question": "Is the printer powered on?",
+                    "question_type": "yes_no",
+                    "required": true
+                },
+                {
+                    "question": "Is this a network printer?",
+                    "question_type": "yes_no",
+                    "required": true
+                },
+                {
+                    "question": "When did this problem start?",
+                    "question_type": "text",
+                    "required": false,
+                    "help_text": "Approximate date and time when you first noticed the issue"
+                }
+            ],
+            "is_active": true
+        },
+        {
+            "title": "Install Software Updates",
+            "category": "Software",
+            "subcategory": "System Maintenance",
+            "content": "Regular software updates are essential for security and performance. This guide shows you how to safely install updates.",
+            "keywords": [
+                "software updates",
+                "system maintenance",
+                "security patches"
+            ],
+            "symptoms": [
+                "System running slowly",
+                "security warnings",
+                "outdated software"
+            ],
+            "difficulty_level": "easy",
+            "estimated_time_minutes": 20,
+            "success_rate": 0.90,
+            "solution_steps": [
+                {
+                    "order": 1,
+                    "title": "Check for Available Updates",
+                    "content": "Open your system's update checker to see what updates are available",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 2
+                },
+                {
+                    "order": 2,
+                    "title": "Review Update Details",
+                    "content": "Read the description of each update to understand what it does",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 3
+                },
+                {
+                    "order": 3,
+                    "title": "Backup Important Data",
+                    "content": "Create a backup of your important files before installing updates",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 10
+                },
+                {
+                    "order": 4,
+                    "title": "Install Updates",
+                    "content": "Click install and wait for the updates to complete",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 3
+                },
+                {
+                    "order": 5,
+                    "title": "Restart if Required",
+                    "content": "Restart your computer if prompted to complete the update process",
+                    "step_type": "instruction",
+                    "estimated_time_minutes": 2
+                }
+            ],
+            "diagnostic_questions": [
+                {
+                    "question": "What operating system are you using?",
+                    "question_type": "multiple_choice",
+                    "options": [
+                        "Windows",
+                        "macOS",
+                        "Linux"
+                    ],
+                    "required": true
+                },
+                {
+                    "question": "Have you backed up your data?",
+                    "question_type": "yes_no",
+                    "required": true
+                }
+            ],
+            "is_active": true
+        }
+    ],
+    "metadata": {
+        "version": "1.0",
+        "created_at": "2024-01-01T00:00:00Z",
+        "total_articles": 3,
+        "categories": [
+            "Email",
+            "Hardware",
+            "Software"
+        ],
+        "difficulty_levels": [
+            "easy",
+            "medium"
+        ]
+    }
+}

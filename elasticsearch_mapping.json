@@ -1,0 +1,178 @@
+{
+    "settings": {
+        "analysis": {
+            "analyzer": {
+                "helpdesk_content_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "stop",
+                        "snowball",
+                        "word_delimiter_graph"
+                    ],
+                    "stopwords": "_english_"
+                },
+                "helpdesk_symptom_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "stop",
+                        "snowball",
+                        "word_delimiter_graph",
+                        "synonym_filter"
+                    ],
+                    "stopwords": "_english_"
+                },
+                "helpdesk_keyword_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "word_delimiter_graph",
+                        "unique"
+                    ]
+                },
+                "helpdesk_synonym_analyzer": {
+                    "type": "custom",
+                    "tokenizer": "standard",
+                    "filter": [
+                        "lowercase",
+                        "synonym_filter"
+                    ]
+                }
+            },
+            "filter": {
+                "synonym_filter": {
+                    "type": "synonym",
+                    "synonyms": [
+                        "email, mail, e-mail, electronic mail",
+                        "password, pwd, pass, passwd",
+                        "username, user, login, userid",
+                        "computer, pc, desktop, laptop",
+                        "internet, web, online, network",
+                        "printer, print, printing",
+                        "software, program, application, app",
+                        "hardware, device, equipment",
+                        "error, issue, problem, bug, fault",
+                        "solution, fix, resolve, repair",
+                        "restart, reboot, reset",
+                        "update, upgrade, patch",
+                        "install, setup, configure",
+                        "uninstall, remove, delete"
+                    ]
+                }
+            }
+        },
+        "number_of_shards": 1,
+        "number_of_replicas": 0
+    },
+    "mappings": {
+        "properties": {
+            "article_id": {
+                "type": "integer"
+            },
+            "title": {
+                "type": "text",
+                "analyzer": "helpdesk_content_analyzer",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "content": {
+                "type": "text",
+                "analyzer": "helpdesk_content_analyzer"
+            },
+            "category": {
+                "type": "keyword"
+            },
+            "subcategory": {
+                "type": "keyword"
+            },
+            "difficulty_level": {
+                "type": "keyword",
+                "enum": [
+                    "easy",
+                    "medium",
+                    "hard"
+                ]
+            },
+            "keywords": {
+                "type": "text",
+                "analyzer": "helpdesk_keyword_analyzer",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "symptoms": {
+                "type": "text",
+                "analyzer": "helpdesk_symptom_analyzer",
+                "fields": {
+                    "keyword": {
+                        "type": "keyword",
+                        "ignore_above": 256
+                    }
+                }
+            },
+            "solution_steps": {
+                "type": "nested",
+                "properties": {
+                    "order": {
+                        "type": "integer"
+                    },
+                    "title": {
+                        "type": "text",
+                        "analyzer": "helpdesk_content_analyzer"
+                    },
+                    "content": {
+                        "type": "text",
+                        "analyzer": "helpdesk_content_analyzer"
+                    }
+                }
+            },
+            "diagnostic_questions": {
+                "type": "nested",
+                "properties": {
+                    "question": {
+                        "type": "text",
+                        "analyzer": "helpdesk_content_analyzer"
+                    },
+                    "expected_answer": {
+                        "type": "keyword"
+                    },
+                    "help_text": {
+                        "type": "text",
+                        "analyzer": "helpdesk_content_analyzer"
+                    }
+                }
+            },
+            "success_rate": {
+                "type": "float",
+                "min": 0.0,
+                "max": 1.0
+            },
+            "estimated_time_minutes": {
+                "type": "integer",
+                "min": 1
+            },
+            "created_at": {
+                "type": "date",
+                "format": "strict_date_optional_time||epoch_millis"
+            },
+            "updated_at": {
+                "type": "date",
+                "format": "strict_date_optional_time||epoch_millis"
+            },
+            "is_active": {
+                "type": "boolean"
+            }
+        }
+    }
+}

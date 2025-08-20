@@ -1,0 +1,50 @@
+# Intelligent Search System Requirements
+
+# Core Elasticsearch integration
+elasticsearch>=8.0.0
+elasticsearch-dsl>=8.0.0
+
+# Data processing and analysis
+numpy>=1.24.0
+pandas>=1.5.0
+
+# Text processing and NLP
+nltk>=3.8.0
+spacy>=3.5.0
+textblob>=0.17.0
+
+# Machine learning (optional, for advanced intent detection)
+scikit-learn>=1.2.0
+scipy>=1.10.0
+
+# Data validation and models
+pydantic>=1.10.0
+marshmallow>=3.19.0
+
+# Utilities
+python-dateutil>=2.8.0
+pytz>=2022.1
+pathlib2>=2.3.0
+
+# Development and testing
+pytest>=7.0.0
+pytest-mock>=3.10.0
+pytest-cov>=4.0.0
+
+# Code quality
+black>=22.0.0
+flake8>=5.0.0
+mypy>=1.0.0
+
+# Performance monitoring
+psutil>=5.9.0
+memory-profiler>=0.60.0
+
+# Logging and monitoring
+structlog>=23.0.0
+prometheus-client>=0.16.0
+
+# Optional: Advanced NLP features
+transformers>=4.20.0
+torch>=1.12.0
+sentence-transformers>=2.2.0
